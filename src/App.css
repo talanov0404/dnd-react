@@ -1,38 +1,96 @@
-.App {
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  min-height: 100vh;
+}
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #434344;
+  background-color: #cfd0cf;
+}
+
+.page-wrapper {
+  width: 128rem;
+  margin: 0rem auto;
+}
+
+.page-wrap header h1{
+  font-size: 42px;
+  text-align: center;
+  margin: 4rem;
+  line-height: 47px;
+}
+
+.main-container {
+  display: flex;
+  height: 70rem;
+  border: 1px #000000 solid;
+}
+.place-zone{
+  width: 1000px;
+  background: #ffffff;
+  padding: 20px;
+}
+.set-elements {
+  width: 280px;
+  background: burlywood;
+  padding: 20px;
+}
+.button{
+  height: max-content;
+  width: 100%;
+  background: #555555;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 1px #ffffff solid;
+}
+.button p{
+  color: #ffffff;
+  padding: 5px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.trash{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 240px;
+  width: 100%;
+  background: #555555;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 1px #ffffff solid;
 }
-
-.App-link {
-  color: #61dafb;
+.string, .number{
+  height: max-content;
+  width: 100%;
+  max-width: 1000px;
+  background: #555555;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 1px #ffffff solid;
+  padding: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label{
+  color: #ffffff;
+}
+.layout{
+  min-height: 100px;
+  padding: 10px;
+  width: 100%;
+  max-width: 1000px;
+  background: #555555;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 1px #ffffff solid;
 }
